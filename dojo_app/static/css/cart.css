@@ -1,0 +1,61 @@
+.a5_c {
+    height: 20px;
+    line-height: 20px;
+    /* position: relative; */
+    /* right: -12px;
+    top: 0; */
+    width: 20px;
+    display: flex;
+    background: #fced70;
+    border-radius: 16px;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 600;
+    justify-content: center;
+    /* right: -124px;
+    top: -48px; */
+    margin-bottom: 20px;
+}
+.navbar{
+    background-color: #afec51;
+}
+.cart{
+display: flex;
+}
+.btn-header{
+    background-color:white;
+    color: black;
+}
+
+.item{
+    margin-top: 2px;
+    border:1px solid black;
+
+}
+form{
+    display: inline-block;
+}
+.input{
+    width: 150px;
+}
+.btn-success{
+    background-color: #afec51;
+    color: black;
+    margin-top:10px ;
+    margin-left: 30px;
+}
+label{
+    width:150px
+}
+.my-col{
+    background-color: grey;
+    color:white;
+}
+.cart>a:nth-child(2){
+    color: black;
+}
+ /* p{
+    max-width: 20px;
+    min-height: 200px;
+    color:rebeccapurple;
+} */

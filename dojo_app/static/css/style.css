@@ -1,0 +1,156 @@
+
+.a5_c {
+    height: 20px;
+    line-height: 20px;
+    /* position: relative; */
+    /* right: -12px;
+    top: 0; */
+    width: 20px;
+    display: flex;
+    background: #fced70;
+    border-radius: 16px;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 600;
+    justify-content: center;
+    /* right: -124px;
+    top: -48px; */
+    margin-bottom: 20px;
+}
+.g_c {
+    align-items: center;
+    display: -webkit-box;
+    display: flex;
+    justify-content: center;
+    text-decoration: inherit;
+    width: 44px;
+    margin: -8px;
+    height: 34px;
+}
+ /* .bg_a * {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+.g_b {
+    -webkit-box-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: flex;
+    height: 100%;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-decoration: inherit;
+    width: 100%;
+}
+#global-search-submit span {
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+    background-color: #ffc220;
+} */
+.cart>a:nth-child(2){
+    color: black;
+}
+.navbar{
+    background-color: #afec51;
+}
+.cart{
+display: flex;
+}
+.btn-header{
+    background-color:white;
+    color: black; 
+}
+.point{
+    box-shadow: 5px 10px;
+}
+.slideer{
+    padding: 0px 25px
+}
+.radius {
+    border-radius: 25px;
+}
+.my-row{
+    justify-content: space-around;
+}
+.product-info{
+    width: 270px; 
+    text-align: center;
+}
+.input{
+    width: 150px;
+}
+.btn-success{
+    background-color: #afec51;
+    color: black;
+    margin-top:10px ;
+    margin-left: 30px;
+}
+label{
+    width:150px
+}
+.my-col{
+    color:white;
+}
+.item{
+    margin-top: 2px;
+    border:1px solid black;
+
+}
+form{
+    display: inline-block;
+}
+.add{
+    background-color: #afec51;
+    float: right;
+    margin-top: 15px;
+
+}
+.addcat{
+    background-color: #afec51;
+}
+.wraper{
+    background-color:gray;
+    border:1px solid grey;
+}
+    .container-sign {
+        width: 25%;
+        margin: 10% auto;
+        background-color:white;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .button-signin {
+        background-color: #afec51;
+    }
+
+    .form-control {
+        height: 55px;
+    }
+
+    .btn-primary {
+        border-radius: 15px;
+        margin-top: 10px;
+        width: 100%;
+        margin-top: 50px;
+        border: none;
+        font-weight: bold;
+        color: green;
+    }
+
+    .btn-primary:hover {
+        background-color: #3e8e41
+    }
+
+    .btn-button-signin a {
+        display: block;
+        background-color: #afec51;
+        margin-top: 50px;
+    }
+    .btn-button-signin p{
+    margin-top: 9px;
+    margin-bottom: -47px;
+    }
+    .btn-button-signin{
+        text-align: center;
+    }

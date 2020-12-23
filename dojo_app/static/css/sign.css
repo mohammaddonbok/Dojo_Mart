@@ -1,0 +1,46 @@
+.wraper{
+    background-color:gray;
+    border:1px solid grey;
+}
+    .container-sign {
+        width: 25%;
+        margin: 10% auto;
+        background-color:white;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .button-signin {
+        background-color: #afec51;
+    }
+
+    .form-control {
+        height: 55px;
+    }
+
+    .btn-primary {
+        border-radius: 15px;
+        margin-top: 10px;
+        width: 100%;
+        margin-top: 50px;
+        border: none;
+        font-weight: bold;
+        color: green;
+    }
+
+    .btn-primary:hover {
+        background-color: #3e8e41
+    }
+
+    .btn-button-signin a {
+        display: block;
+        background-color: #afec51;
+        margin-top: 50px;
+    }
+    .btn-button-signin p{
+    margin-top: 9px;
+    margin-bottom: -47px;
+    }
+    .btn-button-signin{
+        text-align: center;
+    }
