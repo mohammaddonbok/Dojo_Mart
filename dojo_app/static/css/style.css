@@ -1,10 +1,6 @@
-
 .a5_c {
     height: 20px;
     line-height: 20px;
-    /* position: relative; */
-    /* right: -12px;
-    top: 0; */
     width: 20px;
     display: flex;
     background: #fced70;
@@ -27,130 +23,142 @@
     margin: -8px;
     height: 34px;
 }
- /* .bg_a * {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
+/* .bg_a * {
+-webkit-box-sizing: inherit;
+box-sizing: inherit;
 }
 .g_b {
-    -webkit-box-align: center;
-    align-items: center;
-    display: -webkit-box;
-    display: flex;
-    height: 100%;
-    -webkit-box-pack: center;
-    justify-content: center;
-    text-decoration: inherit;
-    width: 100%;
+-webkit-box-align: center;
+align-items: center;
+display: -webkit-box;
+display: flex;
+height: 100%;
+-webkit-box-pack: center;
+justify-content: center;
+text-decoration: inherit;
+width: 100%;
 }
 #global-search-submit span {
-    border-top-right-radius: 22px;
-    border-bottom-right-radius: 22px;
-    background-color: #ffc220;
+border-top-right-radius: 22px;
+border-bottom-right-radius: 22px;
+background-color: #ffc220;
 } */
-.cart>a:nth-child(2){
+.cart > a:nth-child(2) {
     color: black;
 }
-.navbar{
+.navbar {
     background-color: #afec51;
 }
-.cart{
-display: flex;
+.cart {
+    display: flex;
 }
-.btn-header{
-    background-color:white;
-    color: black; 
+.btn-header {
+    background-color: white;
+    color: black;
 }
-.point{
+.point {
     box-shadow: 5px 10px;
 }
-.slideer{
-    padding: 0px 25px
+.slideer {
+    padding: 0px 25px;
 }
 .radius {
     border-radius: 25px;
 }
-.my-row{
-    justify-content: space-around;
-}
-.product-info{
-    width: 270px; 
+.product-info {
+    width: 270px;
     text-align: center;
 }
-.input{
+.input {
     width: 150px;
 }
-.btn-success{
+.btn-success {
     background-color: #afec51;
     color: black;
-    margin-top:10px ;
+    margin-top: 10px;
     margin-left: 30px;
 }
-label{
-    width:150px
+label {
+    width: 150px;
 }
-.my-col{
-    color:white;
+.my-col {
+    color: white;
 }
-.item{
+.item {
     margin-top: 2px;
-    border:1px solid black;
-
+    border: 1px solid black;
 }
-form{
+form {
     display: inline-block;
 }
-.add{
+.add {
     background-color: #afec51;
     float: right;
     margin-top: 15px;
-
 }
-.addcat{
+.addcat {
     background-color: #afec51;
 }
-.wraper{
-    background-color:gray;
-    border:1px solid grey;
+.wraper {
+    background-color: gray;
+    border: 1px solid grey;
 }
-    .container-sign {
-        width: 25%;
-        margin: 10% auto;
-        background-color:white;
-        padding: 20px;
-        border-radius: 10px;
-    }
+.container-sign {
+    width: 25%;
+    margin: 10% auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
 
-    .button-signin {
-        background-color: #afec51;
-    }
+.button-signin {
+    background-color: #afec51;
+}
 
-    .form-control {
-        height: 55px;
-    }
+.form-control {
+    height: 55px;
+}
 
-    .btn-primary {
-        border-radius: 15px;
-        margin-top: 10px;
-        width: 100%;
-        margin-top: 50px;
-        border: none;
-        font-weight: bold;
-        color: green;
-    }
+.btn-primary {
+    border-radius: 15px;
+    margin-top: 10px;
+    width: 100%;
+    margin-top: 50px;
+    border: none;
+    font-weight: bold;
+    color: green;
+}
 
-    .btn-primary:hover {
-        background-color: #3e8e41
-    }
+.btn-primary:hover {
+background-color: #3e8e41;
+}
 
-    .btn-button-signin a {
-        display: block;
-        background-color: #afec51;
-        margin-top: 50px;
-    }
-    .btn-button-signin p{
-    margin-top: 9px;
-    margin-bottom: -47px;
-    }
-    .btn-button-signin{
-        text-align: center;
-    }
+.btn-button-signin a {
+display: block;
+background-color: #afec51;
+margin-top: 50px;
+}
+.btn-button-signin p {
+margin-top: 9px;
+margin-bottom: -47px;
+}
+.btn-button-signin {
+text-align: center;
+}
+.like {
+font-size: 1.5rem;
+}
+.my-card {
+background-color: #afec51;
+}
+.add-to-cart-btn {
+background-color: white;
+color: black;
+border: none;
+}
+h5 {
+color: black;
+}
+.card-title-desc {
+color: black;
+}

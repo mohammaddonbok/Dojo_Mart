@@ -15,7 +15,7 @@ class User(models.Model):
 
 class Category(models.Model):
     title=models.CharField(max_length=255)
-    image=models.ImageField(null=True,blank=True, upload_to="images/")
+    image=models.ImageField(null=True,blank=True, upload_to="categories/")
     created_at=models.DateTimeField(auto_now_add=True)
     updated_at=models.DateTimeField(auto_now=True)
 
@@ -23,7 +23,7 @@ class Product(models.Model):
     name=models.CharField(max_length=255)
     price=models.DecimalField(max_digits=5,decimal_places=2)
     quantity=models.IntegerField()
-    image=models.ImageField(null=True,blank=True,upload_to="images/")
+    image=models.ImageField(null=True,blank=True,upload_to="products/")
     description=models.TextField()
     category=models.ForeignKey(Category,related_name="products",on_delete=models.CASCADE)
     created_at=models.DateTimeField(auto_now_add=True)
@@ -32,7 +32,6 @@ class Product(models.Model):
 class Order(models.Model):
     totalCharge=models.DecimalField(max_digits=5,decimal_places=2)
     address=models.CharField(max_length=255)
-    numberOfItem=models.IntegerField()
     phone_number=models.CharField(max_length=25)
     products=models.ManyToManyField(Product,related_name="order",through="Cart")
     created_at=models.DateTimeField(auto_now_add=True)

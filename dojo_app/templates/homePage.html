@@ -27,7 +27,7 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     {% load static%}
     <link rel="stylesheet" href="{%static 'css/style.css'%}">
-    
+
 </head>
 
 <body>
@@ -44,11 +44,11 @@
         </form>
         <div class="cart">
             <a href="/show_sign_in_form" class="btn btn-header mr-4 radius">Sign in</a>
-            <a href="/show_cart_form"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart4"
-                viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
-            </svg></a>
+            <a href="/show_cart_form"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-cart4" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                </svg></a>
             <div aria-hidden="true" id="header-cart-tooltip" class="a5_c">12</div>
             </a>
         </div>
@@ -85,369 +85,30 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <form enctype="multipart/form-data"  method="POST" action="/add_category"class="row mt-3 mb-3 justify-content-start">
-            {% csrf_token %}
-            {{form.media}}
-            {{form.as_p}}
-            <div class="col-4">
-                <input type="file" class="form-control" name="img" placeholder="Browse">
-            </div>
-            <div class="col-4">
-                <input type="text" name="title" class="form-control" placeholder="Title">
-            </div>
-            <div class="col-4">
-                <input type="submit" class="btn addcat" value="Add Category">
-            </div>
-        </form>
         <section class="row my-row">
-            <div class="col-3 my-col">
-                <img src="{% static 'img/Bread/bread2.jpg' %}">
-            </div>
-            <div class="col-3 my-col">
-                <img src="{% static 'img/Bread/bread3.jpg' %}">
-            </div>
-            <div class="col-3 my-col">
-                <img src="{% static 'img/Bread/bread4.jpg' %}">
-            </div>
-        </section>
-        <article class="row my-row ">
-            <div class="col-3 product-info ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-            <div class="col-3 product-info ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-            <div class="col-3 product-info ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-        </article>
-        <section class="row my-row">
-            <div class="col-3 my-col">
-                <img src="{% static 'img/Bread/bread5.jpg' %}">
-            </div>
-            <div class="col-3 my-col">
-                <img src="{% static 'img/Bread/bread6.jpg' %}">
-            </div>
-            <div class="col-3 my-col ">
-                <img src="{% static 'img/Bread/bread7.jpg' %}">
-            </div>
-        </section>
-        <article class="row my-row ">
-            <div class="col-3 product-info ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-            <div class="col-3 product-info ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-            <div class="col-3 product-info  ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-        </article>
-        <section class="row my-row">
-            <div class="col-3 my-col">
-                <img src="{% static 'img/Bread/bread8.jpg' %}">
-            </div>
-            <div class="col-3 my-col">
-                <img src="{% static 'img/Bread/bread9.jpg' %}">
-            </div>
-            <div class="col-3 my-col">
-                <img src="{% static 'img/Bread/bread10.jpg' %}">
-            </div>
-        </section>
-        <article class="row my-row ">
-            <div class="col-3 product-info ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-            <div class="col-3 product-info ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-            <div class="col-3 product-info  ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-        </article>
-        <!-- <section class="row my-row">
-            <div class="col-3 my-col">
-                <img src="Softdrinks/drinks2.jpg">
-            </div>
-            <div class="col-3 my-col">
-                <img src="Softdrinks/drinks3.jpg">
-            </div>
-            <div class="col-3 my-col">
-                <img src="Softdrinks/drinks4.jpg">
-            </div>
-        </section>
-        <article class="row my-row ">
-            <div class="col-3 product-info ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-            <div class="col-3 product-info ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-            <div class="col-3 product-info  ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-        </article>
-        <section class="row my-row">
-            <div class="col-3 my-col">
-                <img src="Softdrinks/drinks5.jpg">
-            </div>
-            <div class="col-3 my-col">
-                <img src="Softdrinks/drinks6.jpg">
-            </div>
-            <div class="col-3 my-col">
-                <img src="Softdrinks/drinks7.jpg">
-            </div>
-        </section>
-        <article class="row my-row ">
-            <div class="col-3 product-info ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-            <div class="col-3 product-info ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-            <div class="col-3 product-info  ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-        </article>
-        <section class="row my-row">
-            <div class="col-3 my-col">
-                <img src="Softdrinks/drinks8.jpg">
-            </div>
-            <div class="col-3 my-col">
-                <img src="Softdrinks/drinks9.jpg">
-            </div>
-            <div class="col-3 my-col">
-                <img src="Softdrinks/drinks10.jpg">
-            </div>
-        </section>
-        <article class="row my-row ">
-            <div class="col-3 product-info ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-            <div class="col-3 product-info ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-            <div class="col-3 product-info  ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-        </article>
-        <section class="row my-row">
-            <div class="col-3 my-col">
-                <img src="Canned food/Canned food2.jpg">
-            </div>
-            <div class="col-3 my-col">
-                <img src="Canned food/Canned food3.jpg">
-            </div>
-            <div class="col-3 my-col">
-                <img src="Canned food/Canned food4.jpg">
-            </div>
-        </section>
-        <article class="row my-row ">
-            <div class="col-3 product-info ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-            <div class="col-3 product-info ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-            <div class="col-3 product-info  ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-        </article>
-        <section class="row my-row">
-            <div class="col-3 my-col">
-                <img src="Canned food/Canned food5.jpg">
-            </div>
-            <div class="col-3 my-col">
-                <img src="Canned food/Canned food6.jpg">
-            </div>
-            <div class="col-3 my-col">
-                <img src="Canned food/Canned food7.jpg">
-            </div>
-        </section>
-        <article class="row my-row ">
-            <div class="col-3 product-info ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-            <div class="col-3 product-info ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-            <div class="col-3 product-info  ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-        </article>
-        <section class="row my-row">
-            <div class="col-3 my-col">
-                <img src="Canned food/Canned food8.jpg">
-            </div>
-            <div class="col-3 my-col">
-                <img src="Canned food/Canned food9.jpg">
-            </div>
-            <div class="col-3 my-col">
-                <img src="Canned food/Canned food10.jpg">
-            </div>
-        </section>
-        <article class="row my-row ">
-            <div class="col-3 product-info ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-            <div class="col-3 product-info ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-            <div class="col-3 product-info  ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-        </article>
-        <section class="row my-row">
-            <div class="col-3 my-col">
-                <img src="Chocolate/chocolate2.jpg">
-            </div>
-            <div class="col-3 my-col">
-                <img src="Chocolate/chocolate3.jpg">
-            </div>
-            <div class="col-3 my-col">
-                <img src="Chocolate/chocolate4.jpg">
-            </div>
-        </section>
-        <article class="row my-row ">
-            <div class="col-3 product-info ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-            <div class="col-3 product-info ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-            <div class="col-3 product-info  ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-        </article>
-        <section class="row my-row">
-            <div class="col-3 my-col">
-                <img src="Chocolate/chocolate5.jpg">
-            </div>
-            <div class="col-3 my-col">
-                <img src="Chocolate/chocolate6.jpg">
-            </div>
-            <div class="col-3 my-col">
-                <img src="Chocolate/chocolate7.jpg">
-            </div>
-        </section>
-        <article class="row my-row ">
-            <div class="col-3 product-info ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-            <div class="col-3 product-info ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-            <div class="col-3 product-info  ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-        </article>
-        <section class="row my-row">
-            <div class="col-3 my-col">
-                <img src="Chocolate/chocolate8.jpg">
-            </div>
-            <div class="col-3 my-col">
-                <img src="Chocolate/chocolate9.jpg">
-            </div>
-            <div class="col-3 my-col">
-                <img src="Chocolate/chocolate10.jpg">
-            </div>
-        </section>
-        <article class="row my-row ">
-            <div class="col-3 product-info ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-            <div class="col-3 product-info ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-            <div class="col-3 product-info  ">
-                <p>product price</p>
-                <input type="number" name="quantity" min="1" max="5"><br>
-                <a href="#">Add To Cart</a>
-            </div>
-        </article> -->
-        <section class="row mt-2">
-            <form method="POST" action="/add_product" enctype="multipart/form-data" class="col-3">
-                {% csrf_token %}
-                {{form.media}}
-                {{form.as_p}}
-                <input type="file" class="form-control" placeholder="Browse">
-                <input type="text" class="form-control" placeholder="Name">
-                <textarea class="form-control" rows="3" placeholder="Product Description"></textarea>
-                <input type="text" class="form-control" placeholder="Price">
-                <input style="width:100%;" type="number" value="0" min="0" max="50" step="1">
-                <input type="submit" class="btn add" value="Add Product">
-            </form>
-        </section>
+            <div class="col-4 my-col m-2">
+                <div class="card">
+                    <img class="card-img" src="{% static 'img/Bread/bread2.jpg' %}" alt="bread">
+                </div>
+                <div class="card-body my-card">
+                    <h4 class="card-title card-title-desc">Name</h4>
+                    <p class="card-text card-title-desc">
+                        Description </p>
+                    <div class="options d-flex flex-fill">
+                        <select class="custom-select mr-1">
+                            <option selected>Quantity</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="price text-success add-to-cart-btn">
+                        <h5 class="mt-4">$125</h5>
+                    </div>
+                    <a href="#" class="btn  mt-3 add-to-cart-btn "><i class="fas fa-shopping-cart price"></i> Add to Cart</a>
+                </div>
+            </div>
+        
     </div>
 </body>
 
