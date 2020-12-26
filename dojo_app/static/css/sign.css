@@ -44,3 +44,21 @@
     .btn-button-signin{
         text-align: center;
     }
+    .add{
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .add>input{
+        width: 70px;
+        height: 40px;
+    }
+    .category{
+        margin-bottom: 0px;
+
+    }
+    .form-group>.col-12{
+        background-color: #afec51;
+        border: transparent;
+    }

@@ -58,10 +58,58 @@ def add_role(role):
     roleOfUser=Role.objects.create(type=role)
     return roleOfUser
 
-def add_user(first_name,last_name,email,password):
+def add_user(first_name,last_name,email,password,typeOfUser):
     """
     Create a record in User table
     """
-    pass
+    user=User.objects.create(first_name=first_name,last_name=last_name,email=email,password=password,role=typeOfUser)
+    return user
 
+def get_Category(id):
+    """
+    bring specicfic category and return it 
+    """
+    category= Category.objects.get(id=id)
+    return category
 
+def is_duplicate_email(email):
+    """
+    this method to cheack if email is duplicated or not that take email and filter it
+    in database and if len email grater true then return true
+    """
+    users = User.objects.filter(email=email).values()
+    if len(users):
+        return True
+    return False
+
+def role_admin():
+    admin=Role.objects.get(id=1)
+    return admin
+
+def role_user():
+    user=Role.objects.get(id=2)
+    return user
+def get_user(id):
+    user = User.objects.get(id=id)
+    return user
+def get_userByEmail(email):
+    user=User.objects.filter(email=email)
+    if(len(user)>0):
+        return user[0]
+    return None
+
+def product_to_add(name,description,price,quantity,image,category):
+    category=Category.objects.get(title=category)
+    product=Product.objects.create(name=name, description=description,quantity=quantity, price=price,image=image,category=category)
+    return product
+
+def product_to_edit(n,desc,p,q,image,cat,product_id):
+    category=Category.objects.get(title=cat)
+    product=Product.objects.get(id=product_id)
+    product.name=n
+    product.description=desc
+    product.price=p
+    product.quantity=q
+    product.image=image
+    product.category=category
+    product.save()

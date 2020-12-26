@@ -1,0 +1,23 @@
+.navbar{
+    background-color: #afec51;
+    color:rgba(0, 0, 0, 0.493);
+}
+.btn-header{
+    background-color:white;
+    color: black; 
+}
+nav>div{
+    display: flex;
+    justify-content: space-between;
+}
+main{
+    padding: 15px 40px;
+}
+.addcat{
+    background-color:#afec51;
+}
+button{
+    text-align: center;
+    background-color:#afec51;
+    border:transparent;
+}
