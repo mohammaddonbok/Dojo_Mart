@@ -19,6 +19,9 @@ urlpatterns=[
     path('edit_product/<int:id>', views.edit_product),
     path('suggestion',views.suggestion, name='suggestion'),
     path('add_product_form', views.add_product_form),
-    path('add_product',views.add_product)
+    path('add_product',views.add_product),
+    path("add_toCart/<int:id>",views.addToCart),
+    path('show_cart_form', views.showCartForm),
+    path('place_order', views.place_order)
 ]
 
