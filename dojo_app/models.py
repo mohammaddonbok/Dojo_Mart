@@ -39,7 +39,7 @@ class Order(models.Model):
 
 class Cart(models.Model):
     quantity=models.IntegerField()
-    order=models.ForeignKey(Order,related_name="cart",on_delete=models.CASCADE)
+    order=models.ForeignKey(Order,related_name="cart",on_delete=models.CASCADE,null=True)
     product=models.ForeignKey(Product,related_name="cart",on_delete=models.CASCADE)
     user=models.ForeignKey(User,related_name="cart",on_delete=models.CASCADE)
     created_at=models.DateTimeField(auto_now_add=True)

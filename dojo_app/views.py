@@ -4,6 +4,8 @@ from .models import *
 import re ,bcrypt
 
 def root(request):
+    if "counter" not in request.session:
+        request.session['counter']=0
     if "category_id" not in request.session:
         specific_category=get_Category(id=1)
         category=Category.objects.all()
@@ -18,7 +20,8 @@ def root(request):
             "logout":False,
             "admin":False,
             "All_category":category,
-            "all_products":all_products
+            "all_products":all_products,
+            "counter":request.session['counter']
         }
         
         return render(request,"homePage.html", context)
@@ -30,7 +33,9 @@ def root(request):
             "logout":True,
             "admin":role,
             "All_category":category,
-            "all_products":all_products
+            "all_products":all_products,
+            "counter":request.session['counter']
+
         }
         return render(request,"homePage.html",context)
 
@@ -41,9 +46,47 @@ def showCreateAccountForm(request):
     return render(request,"registerForm.html")
 
 def showCartForm(request):
+    if "user_id" in request.session:
+        id=request.session['user_id']
+        user=User.objects.get(id=id)
+        cart=Cart.objects.filter(user=user)
+        sum=0
+        for c in cart:
+            sum+=c.product.price*c.quantity
+        context={
+            "counter":request.session['counter'],
+            "Cart":cart,
+            "total_charge":sum
+        }
+        return render(request,"cartForm.html",context)
+    else:
+        return redirect("/show_sign_in_form")
 
-    return render(request,"cartForm.html")
-# Create your views here.
+def place_order(request):
+    # if "user_id" in request.session:
+    #     id=request.session['user_id']
+    #     user=User.objects.get(id=id)
+    #     product=user.cart.all()
+    #     totalCharge=request.POST['total']
+    #     address=request.POST['address']
+    #     phone=request.POST['phone']
+    #     order=Order.objects.create(totalCharge=totalCharge,address=address,phone_number=phone,products.add(product))
+    #     v=user.cart
+    #     v.delete
+        return redirect("/show_cart_form")
+def addToCart(request,id):
+    product=Product.objects.get(id=id)
+    quantity=request.POST['quantity']
+    quantity=int(quantity)
+    request.session['counter']+=1
+    if "user_id" in request.session:
+        id=request.session["user_id"]
+        user=User.objects.get(id=id)
+        Cart.objects.create(quantity=quantity,product=product,user=user)
+    else:
+        return redirect("/show_sign_in_form")
+    return redirect("/")
+    # Create your views here.
 def addCategory(request):
     """
     only the admin can add to category
@@ -198,6 +241,7 @@ def logout(request):
         del request.session['user_id']
         del request.session['first_name']
         del request.session['last_name']
+        del request.session['counter']
     print('not in ***********logout')
     return redirect('/')
 def signin(request):
@@ -279,8 +323,9 @@ def showCatgeoryProducts(request,category_id):
     if 'category_id'  not in request.session:
         request.session['category_id']=category_id
         
+        
     else:
         del request.session['category_id']
         request.session['category_id']=category_id
-        return redirect('/')
+    return redirect('/')
 
