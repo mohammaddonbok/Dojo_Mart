@@ -74,7 +74,6 @@
                 {%endfor%}
             </ol>
             <div class="carousel-inner">
- 
                 <div class="carousel-item active">
                     <a href='/show_category_product/{{All_category.0.id}}'><img class="d-block w-100" src="{{All_category.0.image.url}}" alt="First slide"></a>
                 </div>
@@ -104,7 +103,7 @@
                 <div class="card-body my-card">
                     <h4 class="card-title card-title-desc">{{product.name}}</h4>
                     <p class="card-text card-title-desc">
-                        product.description </p>
+                        {{product.description}} </p>
                     <div class="options d-flex flex-fill">
                         <select class="custom-select mr-1">
                             <option selected>Quantity</option>
@@ -114,7 +113,7 @@
                         </select>
                     </div>
                     <div class="price text-success add-to-cart-btn">
-                        <h5 class="mt-4">{{product.price}}</h5>
+                        <h5 class="mt-4">{{product.price}} $</h5>
                     </div>
                     <a href="#" class="btn  mt-3 add-to-cart-btn "><i class="fas fa-shopping-cart price"></i> Add to Cart</a>
                 </div>

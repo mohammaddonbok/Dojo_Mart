@@ -4,14 +4,14 @@ from .models import *
 import re ,bcrypt
 
 def root(request):
-    # if 'category_id'  not in request.session:
-    #     specific_category=get_Category(id=1)
-    #     category=Category.objects.all()
-    #     all_products=specific_category.products.all
-    # else:
-    specific_category=get_Category(id=request.session['category_id'])
-    category=Category.objects.all()
-    all_products=specific_category.products.all
+    if "category_id" not in request.session:
+        specific_category=get_Category(id=1)
+        category=Category.objects.all()
+        all_products=specific_category.products.all
+    else:
+        specific_category=get_Category(id=request.session['category_id'])
+        category=Category.objects.all()
+        all_products=specific_category.products.all
     if 'user_id' not in request.session:
         context={
             "signin":True,
@@ -28,7 +28,9 @@ def root(request):
         context={
             "signin":False,
             "logout":True,
-            "admin":role
+            "admin":role,
+            "All_category":category,
+            "all_products":all_products
         }
         return render(request,"homePage.html",context)
 
@@ -280,5 +282,5 @@ def showCatgeoryProducts(request,category_id):
     else:
         del request.session['category_id']
         request.session['category_id']=category_id
-    return redirect('/')
+        return redirect('/')
 

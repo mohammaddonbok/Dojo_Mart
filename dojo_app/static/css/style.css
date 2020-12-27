@@ -83,6 +83,7 @@ label {
 }
 .my-col {
     color: white;
+    
 }
 .item {
     margin-top: 2px;
@@ -164,4 +165,8 @@ color: black;
 }
 .wide{
     width: 10%;
+}
+
+.col-4{
+    max-width: 30%;
 }
