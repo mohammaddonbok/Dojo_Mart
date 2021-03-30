@@ -1,4 +1,3 @@
-# Dojo_Mart
 
 # Definition:
   Following the current with online shopping, we decided to do an e-commerce project for a market where people can shop online for groceries. 
@@ -8,11 +7,11 @@
   He/She can browse all placed orders so those orders can be prepared and sent to the buyer’s address.
   
   ## well we can also list all the technologies that were used:
-    -Front end: Bootstrap, CSS, HTML, JavaScript, JQuery, AJAX
-    -Back end: Python Django Framework
-    -Data Base: MySQL 
+    - Front end: Bootstrap, CSS, HTML, JavaScript, JQuery, AJAX
+    - Back end: Python Django Framework
+    - Data Base: MySQL 
     
  # Team members:
-    -Hadeel Yassin (https://github.com/HadeelYassin)
-    -Ahmad Salah(https://github.com/ahmadmahmouds)
-    -Mohammad Donbok(https://github.com/mohammaddonbok)
+    - Hadeel Yassin [Contribution guidelines for this project](https://github.com/HadeelYassin)
+    - Ahmad Salah(https://github.com/ahmadmahmouds)
+    - Mohammad Donbok(https://github.com/mohammaddonbok)
