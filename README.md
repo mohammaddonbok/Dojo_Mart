@@ -7,7 +7,7 @@
   He/She can browse all placed orders so those orders can be prepared and sent to the buyer’s address.
   
   ### well we can also list all the technologies that were used:
-    1. Front end: Bootstrap, CSS, HTML, JavaScript, JQuery, AJAX
+    1. Front end\: Bootstrap\, CSS\, HTML\, JavaScript\, JQuery\, AJAX
     2. Back end: Python Django Framework
     3. Data Base: MySQL 
     
