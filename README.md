@@ -6,12 +6,12 @@
   For the owner of the shop (who was given the admin role), he/she can add categories and products to the website.
   He/She can browse all placed orders so those orders can be prepared and sent to the buyer’s address.
   
-  ### well we can also list all the technologies that were used:
+ ### well we can also list all the technologies that were used:
     - Front end: Bootstrap, CSS, HTML, JavaScript, JQuery, AJAX
     - Back end: Python Django Framework
     - Data Base: MySQL 
     
  # Team members:
-    - [Hadeel Yassin] https://github.com/HadeelYassin
+    - [Hadeel Yassin](https://github.com/HadeelYassin)
     - [Ahmad Salah](https://github.com/ahmadmahmouds)
-    -[Mohammad Donbok](https://github.com/mohammaddonbok)
+    - [Mohammad Donbok](https://github.com/mohammaddonbok)
