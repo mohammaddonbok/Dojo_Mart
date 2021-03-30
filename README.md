@@ -7,11 +7,11 @@
   He/She can browse all placed orders so those orders can be prepared and sent to the buyer’s address.
   
   ### well we can also list all the technologies that were used:
-    1. Front end: Bootstrap, CSS, HTML, JavaScript, JQuery,  AJAX
-    2. Back end: Python Django Framework
-    3. Data Base: MySQL 
+    -Front end: Bootstrap, CSS, HTML, JavaScript, JQuery,  AJAX
+    -Back end: Python Django Framework
+    -Data Base: MySQL 
     
  # Team members:
-    * [Hadeel Yassin](https://github.com/HadeelYassin) 
-    * [Ahmad Salah](https://github.com/ahmadmahmouds)
-    * [Mohammad Donbok](https://github.com/mohammaddonbok)
+    -[Hadeel Yassin](https://github.com/HadeelYassin) 
+    -[Ahmad Salah](https://github.com/ahmadmahmouds)
+    -[Mohammad Donbok](https://github.com/mohammaddonbok)
