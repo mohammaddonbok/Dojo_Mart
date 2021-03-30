@@ -18,25 +18,32 @@
 
  # Screen Shoots:
    - Sign In
-    ![](online%20supermarket%20dojo/signIn.PNG)
+   
+   ![](online%20supermarket%20dojo/signIn.PNG)
     
    - Sign Up
+   
      ![](online%20supermarket%20dojo/signUp.PNG)
    
    - Cart
-       ![](online%20supermarket%20dojo/addtoCart.PNG)
+   
+     ![](online%20supermarket%20dojo/addtoCart.PNG)
 
    - Home Page
+   
      ![](online%20supermarket%20dojo/home1.PNG)
      ![](online%20supermarket%20dojo/home2.PNG)
      
    - Admin
+   
      ![](online%20supermarket%20dojo/admin.PNG)
      
    - Adding Product
+   
      ![](online%20supermarket%20dojo/addProduct.PNG)
    
    - Review Products by admin
+   
      ![](online%20supermarket%20dojo/products.PNG)
    
   
